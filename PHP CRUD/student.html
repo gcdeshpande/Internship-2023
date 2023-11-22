@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+
+<h2>Student Information Form</h2>
+
+<form action="http://localhost/add.php" method="post">
+        <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br>
+
+    <label for="marks1">Subject 1 Marks:</label><br>
+    <input type="number" id="marks1" name="marks1" min="0" max="100" required><br>
+
+    <label for="marks2">Subject 2 Marks:</label><br>
+    <input type="number" id="marks2" name="marks2" min="0" max="100" required><br>
+
+    <label for="marks3">Subject 3 Marks:</label><br>
+    <input type="number" id="marks3" name="marks3" min="0" max="100" required><br>
+
+    <label for="marks4">Subject 4 Marks:</label><br>
+    <input type="number" id="marks4" name="marks4" min="0" max="100" required><br>
+
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
